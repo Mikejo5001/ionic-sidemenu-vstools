@@ -19,8 +19,8 @@ After you finish downloading and installing VS Tools for Apache Cordova (http://
 
 ### Known Issues
 - When debugger is attached on Windows targets, you can get a WWAHost.exe runtime error.
-    -- Issue is currently under investigation.
-  Workaround: When targeting Win/WinPhone, use Start without Debugging (Alt+F5).
+   Issue is currently under investigation.
+   Workaround: When targeting Win/WinPhone, use Start without Debugging (Alt+F5).
 - The Android 4.3 browser has some known limitations, and so the sample may not work perfectly on such devices
 
 
