@@ -18,9 +18,11 @@ After you finish downloading and installing VS Tools for Apache Cordova (http://
 - 05/04/15: Project structure updated for VS 2015 RC. This makes the project interoperable with the Ionic CLI.
 
 ### Known Issues
-- When debugger is attached on Windows targets, you can get a WWAHost.exe runtime error on some VS installs.
+- When debugger is attached on Windows targets, you can get a WWAHost.exe runtime error in some cases when you navigate between pages.
    Issue is currently under investigation.
-   Workaround: When targeting Win/WinPhone, use Start without Debugging (Alt+F5).
+   Workaround: 
+   1. When you start the app, close the DOM Explorer window before you hit the error. This will allow you to hit breakpoints, view the call stack, etc. 
+   2. When targeting Win/WinPhone, use Start without Debugging (Alt+F5)
 - The Android 4.3 browser has some known limitations, and so the sample may not work perfectly on such devices
 
 
