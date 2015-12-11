@@ -4,12 +4,12 @@ This sample provides a version of the Ionic Starter Template for SideMenu that w
 This sample is based on the original Ionic sample at https://github.com/driftyco/ionic-starter-sidemenu
 
 Some changes were made to support Windows targets. For info on changes made to the project to support Windows,
-see this blog post: http://blogs.msdn.com/b/msdn_answers/archive/2015/02/10/running-cordova-apps-on-windows-and-windows-phone-8-1-using-ionic-angularjs-and-other-frameworks.aspx
+see this article on [Getting started with Ionic](http://taco.visualstudio.com/docs/tutorial-ionic/).
 
 ### Requirements
 Visual Studio 2015 RTM with optional cross-platform components for HTML/JavaScript installed.
 
-Note: In VS 2015 RC/RTM, project structure is updated for compatibility with 3rd party tools and CLIs. If you need to migrate an older version of an app based on this template to VS 2015 RTM, see Known Issues (http://go.microsoft.com/fwlink/?LinkID=398782).
+Note: In VS 2015 RC/RTM, project structure is updated for compatibility with 3rd party tools and CLIs. If you need to migrate an older version of an app based on this template to VS 2015 RTM, see this [article on migration](http://taco.visualstudio.com/en-us/docs/migrate-to-vs2015/).
 
 ### Running The App
 After you finish downloading and installing VS Tools for Apache Cordova (http://go.microsoft.com/fwlink/?LinkId=524433), open up the project in Visual Studio.
