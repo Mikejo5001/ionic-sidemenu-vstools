@@ -15,19 +15,20 @@ Note: In VS 2015 RC/RTM, project structure is updated for compatibility with 3rd
 After you finish downloading and installing VS Tools for Apache Cordova (http://go.microsoft.com/fwlink/?LinkId=524433), open up the project in Visual Studio.
 
 ### Updates
+- 11/11/15: Updated for Cordova 5.3.3
 - 05/04/15: Project structure updated for VS 2015 RC. This makes the project interoperable with the Ionic CLI.
 
 ### Known Issues
 - When debugger is attached on Windows targets, you can get a WWAHost.exe runtime error in some cases when you navigate between pages.
    Issue is currently under investigation.
-   Workarounds: 
+   Workarounds:
    1. When you start the app, close the DOM Explorer window before you hit the error. This will allow you to debug by hitting breakpoints, viewing the call stack, etc. Or:
    2. When targeting Win/WinPhone, use Start without Debugging (Alt+F5)
 - The Android 4.3 browser has some known limitations, and so the sample may not work perfectly on such devices
 
 
 ## Terms of Use
-By downloading and running this project, you agree to the license terms of the third party application software, Microsoft products, and components to be installed. 
+By downloading and running this project, you agree to the license terms of the third party application software, Microsoft products, and components to be installed.
 
 The third party software and products are provided to you by third parties. You are responsible for reading and accepting the relevant license terms for all software that will be installed. Microsoft grants you no rights to third party software.
 
@@ -61,6 +62,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-
-
