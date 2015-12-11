@@ -1,26 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.mynewionicsidemenu839246" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>MyNewIonicSideMenu</name>
+<widget id="com.ionicframework.currentsidemenu848016" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>currentSideMenu</name>
   <description>
         An Ionic Framework and Cordova project.
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="you@example.com" href="http://example.com.com/">
+      Your Name Here
     </author>
   <content src="index.html" />
   <access origin="*" />
-  <preference name="windows-target-version" value="8.1" />
-  <preference name="windows-phone-target-version" value="8.1" />
   <preference name="webviewbounce" value="false" />
   <preference name="UIWebViewBounce" value="false" />
   <preference name="DisallowOverscroll" value="true" />
+  <preference name="android-minSdkVersion" value="16" />
   <preference name="BackupWebStorage" value="none" />
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true" />
   </feature>
-  <preference name="KeepRunning" value="False" />
-  <preference name="ShowTitle" value="True" />
-  <preference name="InAppBrowserStorageEnabled" value="False" />
-  <preference name="SuppressesIncrementalRendering" value="True" />
-  <vs:plugin name="org.apache.cordova.console" version="0.2.13" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
+  <preference name="windows-target-version" value="10.0" />
+  <preference name="windows-phone-target-version" value="10.0" />
+  <vs:plugin name="cordova-plugin-whitelist" version="1.2.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
+  <vs:plugin name="cordova-plugin-console" version="1.0.2" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
+  <vs:plugin name="cordova-plugin-device" version="1.1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
+  <vs:plugin name="cordova-plugin-statusbar" version="2.0.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
+  <vs:plugin name="cordova-plugin-splashscreen" version="3.0.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
 </widget>

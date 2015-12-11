@@ -10,8 +10,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
-    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+          if (cordova.plugins.Keyboard.hideKeyboardAccessoryBar) {
+              // iOS only
+              cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+          }
+          cordova.plugins.Keyboard.disableScroll(true);
+
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
@@ -22,47 +27,51 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function ($compileProvider, $stateProvider, $urlRouterProvider) {
 
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|ghttps?|ms-appx|ms-appx-web|x-wmapp0):/);
+
+  $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|ms-appx|ms-appx-web|x-wmapp0):|data:image\//);
+
   $stateProvider
 
-  .state('app', {
-    url: "/app",
+    .state('app', {
+    url: '/app',
     abstract: true,
-    templateUrl: "templates/menu.html",
+    templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
 
   .state('app.search', {
-    url: "/search",
+    url: '/search',
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: 'templates/search.html'
       }
     }
   })
 
   .state('app.browse', {
-    url: "/browse",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/browse.html"
-      }
-    }
-  })
-    .state('app.playlists', {
-      url: "/playlists",
+      url: '/browse',
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
+          templateUrl: 'templates/browse.html'
+        }
+      }
+    })
+    .state('app.playlists', {
+      url: '/playlists',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/playlists.html',
           controller: 'PlaylistsCtrl'
         }
       }
     })
 
   .state('app.single', {
-    url: "/playlists/:playlistId",
+    url: '/playlists/:playlistId',
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
+        templateUrl: 'templates/playlist.html',
         controller: 'PlaylistCtrl'
       }
     }
